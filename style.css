@@ -1,37 +1,49 @@
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:'Poppins',sans-serif;
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
 }
 
 body{
-    background:#111;
-    color:#fff;
+background:#fff8f2;
+color:#333;
+line-height:1.6;
 }
 
 header{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:20px 10%;
-    background:#000;
-    position:sticky;
-    top:0;
+position:sticky;
+top:0;
+background:#111;
+padding:15px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+z-index:1000;
 }
 
 header h1{
-    color:#ff9800;
+color:#ff9800;
+font-size:30px;
 }
 
 nav a{
-    color:#fff;
-    text-decoration:none;
-    margin-left:20px;
-    font-weight:600;
+color:white;
+text-decoration:none;
+margin-left:20px;
+font-weight:600;
+transition:.3s;
+}
+
+nav a:hover{
+color:#ff9800;
 }
 
 .hero{
-    text-align:center;
-    padding:100px 20px;
-    background:linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),url('https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w
+height:90vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),url("images/burger
