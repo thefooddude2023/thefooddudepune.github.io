@@ -170,7 +170,20 @@ max-width:100%;
 border-radius:15px;
 margin:20px auto;
 }
+.floating-whatsapp{
+    bottom:90px;
+    background:#25D366;
+}
 
+.floating-call{
+    bottom:20px;
+    background:#ff7a00;
+}
+
+.floating-whatsapp:hover,
+.floating-call:hover{
+    transform:scale(1.1);
+}
 .floating-whatsapp,
 .floating-call{
 position:fixed;
