@@ -254,3 +254,16 @@ font-size:24px;
 }
 
 }
+.review-card{
+background:#1f1f1f;
+padding:20px;
+margin:20px auto;
+max-width:500px;
+border-radius:15px;
+box-shadow:0 0 15px rgba(255,165,0,.3);
+}
+
+.review-card h3{
+color:#ff9800;
+margin-bottom:10px;
+}
