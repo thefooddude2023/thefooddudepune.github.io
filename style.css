@@ -1,6 +1,6 @@
-/* =========================
-   THE FOOD DUDE - STYLE.CSS
-========================= */
+/* ===========================
+   THE FOOD DUDE v2
+=========================== */
 
 *{
     margin:0;
@@ -10,286 +10,319 @@
 
 body{
     font-family:'Poppins',sans-serif;
-    background:#f8f8f8;
-    color:#333;
-    line-height:1.6;
+    background:#111;
+    color:#fff;
+}
+
+html{
+    scroll-behavior:smooth;
 }
 
 a{
     text-decoration:none;
 }
 
-img{
-    max-width:100%;
-    display:block;
+/* TOP BAR */
+
+.topbar{
+    background:#ff6b00;
+    color:#fff;
+    text-align:center;
+    padding:10px;
+    font-size:14px;
+    font-weight:600;
 }
 
 /* HEADER */
 
 header{
-    background:#ff6b00;
-    color:#fff;
-    padding:15px 30px;
     display:flex;
     justify-content:space-between;
     align-items:center;
+    padding:18px 8%;
+    background:#000;
     position:sticky;
     top:0;
-    z-index:1000;
+    z-index:999;
 }
 
-header h1{
-    font-size:28px;
+.logo{
+    font-size:30px;
+    font-weight:800;
+    color:#ff6b00;
 }
 
 nav a{
     color:#fff;
-    margin-left:20px;
+    margin-left:25px;
     font-weight:600;
+    transition:.3s;
 }
 
 nav a:hover{
-    color:#ffe082;
+    color:#ff6b00;
 }
 
 /* HERO */
 
 .hero{
+    height:90vh;
+    background:url("hero.jpg") center center/cover no-repeat;
+    display:flex;
+    justify-content:center;
+    align-items:center;
     text-align:center;
-    padding:60px 20px;
-    background:linear-gradient(135deg,#ff6b00,#ff9800);
-    color:#fff;
 }
 
-.hero h2{
-    font-size:42px;
-    margin-bottom:15px;
+.overlay{
+    background:rgba(0,0,0,.65);
+    padding:40px;
+    border-radius:20px;
 }
 
-.hero p{
-    font-size:18px;
-    margin-bottom:25px;
+.overlay h1{
+    font-size:60px;
+    color:#ff6b00;
+}
+
+.overlay h2{
+    font-size:34px;
+    margin:15px 0;
+}
+
+.overlay p{
+    font-size:20px;
+    margin-bottom:30px;
 }
 
 .btn{
+    background:#ff6b00;
+    color:#fff;
+    padding:14px 28px;
+    border-radius:50px;
     display:inline-block;
-    background:#fff;
-    color:#ff6b00;
-    padding:12px 25px;
-    border-radius:30px;
     font-weight:bold;
 }
 
 .btn:hover{
-    background:#222;
-    color:#fff;
-}
-/* =========================
-   MENU SECTION
-========================= */
-
-.menu{
-    padding:60px 20px;
-    text-align:center;
     background:#fff;
-}
-
-.menu h2{
-    font-size:36px;
-    margin-bottom:30px;
     color:#ff6b00;
 }
+/* ===========================
+   OFFERS
+=========================== */
 
-.menu-items{
+.offers{
+    padding:70px 8%;
+    background:#181818;
+    text-align:center;
+}
+
+.offers h2{
+    color:#ff6b00;
+    font-size:38px;
+    margin-bottom:35px;
+}
+
+.offer-grid{
     display:flex;
     flex-wrap:wrap;
     justify-content:center;
     gap:25px;
 }
 
-.card{
-    width:280px;
-    background:#fff;
-    border-radius:15px;
-    overflow:hidden;
-    box-shadow:0 5px 15px rgba(0,0,0,0.1);
-    transition:0.3s;
+.offer-card{
+    width:300px;
+    background:#222;
+    border-radius:20px;
+    padding:30px;
+    transition:.3s;
+    border:2px solid transparent;
 }
 
-.card:hover{
+.offer-card:hover{
+    border-color:#ff6b00;
     transform:translateY(-8px);
 }
 
-.card img{
+.offer-card h3{
+    color:#ff6b00;
+    margin-bottom:15px;
+    font-size:24px;
+}
+
+.offer-card p{
+    color:#ddd;
+    margin-bottom:15px;
+}
+
+.offer-card h4{
+    font-size:30px;
+    color:#fff;
+}
+
+/* ===========================
+   MENU
+=========================== */
+
+.menu{
+    padding:70px 8%;
+    background:#111;
+    text-align:center;
+}
+
+.menu h2{
+    color:#ff6b00;
+    font-size:38px;
+    margin-bottom:40px;
+}
+
+.menu-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+.food-card{
+    background:#222;
+    border-radius:20px;
+    overflow:hidden;
+    transition:.3s;
+}
+
+.food-card:hover{
+    transform:translateY(-10px);
+}
+
+.food-card img{
     width:100%;
-    height:200px;
+    height:220px;
     object-fit:cover;
 }
 
-.card h3{
-    margin:15px 0 10px;
+.food-card h3{
+    padding:15px 10px 8px;
+    color:#fff;
 }
 
-.card p{
-    padding:0 15px 20px;
-}
-
-.price{
+.food-card p{
     color:#ff6b00;
-    font-size:22px;
+    font-size:24px;
     font-weight:bold;
-    margin-bottom:20px;
-}
+    padding-bottom:20px;
+   }
+/* ===========================
+   ORDER
+=========================== */
 
-/* GALLERY */
-
-.gallery{
-    padding:60px 20px;
+.order,
+.location,
+.reviews,
+.contact,
+.payment{
+    padding:70px 8%;
     text-align:center;
-    background:#f8f8f8;
+    background:#181818;
 }
 
-.gallery h2{
+.order h2,
+.location h2,
+.reviews h2,
+.contact h2,
+.payment h2{
     color:#ff6b00;
-    margin-bottom:25px;
-}
-
-.gallery-images{
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:center;
-    gap:20px;
-}
-
-.gallery-images img{
-    width:280px;
-    border-radius:15px;
-    transition:0.3s;
-}
-
-.gallery-images img:hover{
-    transform:scale(1.05);
-}
-/* =========================
-   WHY CHOOSE US
-========================= */
-
-.why-us{
-    padding:60px 20px;
-    text-align:center;
-    background:#fff;
-}
-
-.why-us h2{
-    color:#ff6b00;
+    font-size:36px;
     margin-bottom:30px;
 }
 
-.features{
+.order-buttons{
     display:flex;
-    flex-wrap:wrap;
     justify-content:center;
+    flex-wrap:wrap;
     gap:20px;
 }
 
-.feature-box{
-    width:250px;
-    padding:20px;
-    background:#f7f7f7;
+.review{
+    max-width:700px;
+    margin:20px auto;
+    background:#222;
+    padding:25px;
+    border-radius:20px;
+}
+
+.review p{
+    margin:15px 0;
+    color:#ddd;
+}
+
+.qr{
+    width:220px;
+    margin:25px auto;
+    display:block;
     border-radius:15px;
-    box-shadow:0 5px 15px rgba(0,0,0,0.1);
-    transition:0.3s;
 }
 
-.feature-box:hover{
-    transform:translateY(-8px);
+/* FOOTER */
+
+footer{
+    background:#000;
+    text-align:center;
+    padding:35px 20px;
 }
 
-.feature-box h3{
+footer h3{
     color:#ff6b00;
     margin-bottom:10px;
 }
 
-/* CUSTOMER REVIEWS */
-
-.reviews{
-    padding:60px 20px;
-    text-align:center;
-    background:#f8f8f8;
+footer p{
+    color:#bbb;
+    margin:6px 0;
 }
 
-.reviews h2{
-    color:#ff6b00;
-    margin-bottom:30px;
-}
+/* FLOATING WHATSAPP */
 
-.review-box{
-    max-width:600px;
-    margin:20px auto;
-    padding:20px;
-    background:#fff;
-    border-radius:15px;
-    box-shadow:0 5px 15px rgba(0,0,0,0.1);
-}
-
-.review-box h4{
-    color:#ff6b00;
-    margin-top:10px;
-}
-/* =========================
-   FOOTER
-========================= */
-
-footer{
-    background:#222;
+.whatsapp-float{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    width:60px;
+    height:60px;
+    background:#25D366;
     color:#fff;
-    text-align:center;
-    padding:30px 20px;
-    margin-top:40px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:30px;
+    box-shadow:0 5px 15px rgba(0,0,0,.3);
 }
 
-footer a{
-    color:#ff9800;
-    text-decoration:none;
+/* MOBILE */
+
+@media(max-width:768px){
+
+header{
+    flex-direction:column;
 }
 
-footer a:hover{
-    color:#fff;
+nav{
+    margin-top:15px;
 }
 
-/* =========================
-   MOBILE RESPONSIVE
-========================= */
-
-@media (max-width:768px){
-
-    header{
-        flex-direction:column;
-        text-align:center;
-    }
-
-    nav{
-        margin-top:15px;
-    }
-
-    nav a{
-        display:block;
-        margin:10px 0;
-    }
-
-    .hero h2{
-        font-size:30px;
-    }
-
-    .menu-items,
-    .gallery-images,
-    .features{
-        flex-direction:column;
-        align-items:center;
-    }
-
-    .card,
-    .feature-box{
-        width:90%;
-    }
+nav a{
+    display:block;
+    margin:10px 0;
 }
+
+.overlay h1{
+    font-size:42px;
+}
+
+.overlay h2{
+    font-size:24px;
+}
+
+.overlay p{
+
+   
