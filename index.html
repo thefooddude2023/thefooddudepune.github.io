@@ -3,32 +3,33 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>The Food Dude | Fresh • Fast • Loaded With Flavor</title>
+<title>The Food Dude | Premium Fast Food</title>
 
 <link rel="stylesheet" href="style.css">
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
 </head>
 
 <body>
 
-<header>
+<!-- HEADER -->
+
+<header class="header">
 
 <div class="logo">
 🍔 THE FOOD DUDE
 </div>
 
-<nav>
+<nav class="navbar">
 
 <a href="#home">Home</a>
 <a href="#menu">Menu</a>
 <a href="#offers">Offers</a>
 <a href="#gallery">Gallery</a>
-<a href="#about">About</a>
 <a href="#contact">Contact</a>
 
 </nav>
@@ -39,14 +40,20 @@ Order Now
 
 </header>
 
+<!-- HERO -->
+
 <section class="hero" id="home">
 
-<div class="hero-text">
+<div class="hero-content">
 
-<h1>Fresh Burgers.<br>Hot Sandwiches.<br>Loaded Fries.</h1>
+<h1>
+Premium Burgers<br>
+Fresh Sandwiches<br>
+Loaded Fries
+</h1>
 
 <p>
-Experience premium fast food made fresh every time.
+Fresh • Fast • Loaded With Flavor
 </p>
 
 <a href="#menu" class="hero-btn">
@@ -57,32 +64,49 @@ Explore Menu
 
 <div class="hero-image">
 
-<img src="hero.jpg">
+<img src="hero.jpg" alt="Burger">
 
 </div>
 
 </section>
 
-<section class="categories">
+<!-- FEATURED -->
 
-<div class="cat-card">
-🍔
-<h3>Burgers</h3>
+<section class="featured" id="menu">
+
+<h2>Featured Items</h2>
+
+<div class="cards">
+
+<div class="card">
+<img src="burger.jpg">
+<h3>Burger</h3>
+<p>Fresh & Juicy</p>
 </div>
 
-<div class="cat-card">
-🥪
-<h3>Sandwich</h3>
+<div class="card">
+<img src="pizza.jpg">
+<h3>Pizza</h3>
+<p>Cheesy Delight</p>
 </div>
 
-<div class="cat-card">
-🍟
+<div class="card">
+<img src="fries.jpg">
 <h3>Fries</h3>
+<p>Extra Crispy</p>
 </div>
 
-<div class="cat-card">
-🥤
-<h3>Drinks</h3>
+<div class="card">
+<img src="sandwich.jpg">
+<h3>Sandwich</h3>
+<p>Loaded Taste</p>
+</div>
+
 </div>
 
 </section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
