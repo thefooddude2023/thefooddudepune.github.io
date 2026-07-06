@@ -320,3 +320,48 @@ margin-bottom:10px;
 .floating-call:hover{
     transform:scale(1.1);
 }
+/* Mobile Fix */
+@media (max-width:768px){
+
+header{
+    flex-direction:column;
+    text-align:center;
+}
+
+nav{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:15px;
+}
+
+.hero{
+    height:auto;
+    min-height:100vh;
+    padding:60px 20px;
+}
+
+.hero-content{
+    width:100%;
+}
+
+.hero h1{
+    font-size:42px;
+    line-height:1.2;
+}
+
+.hero h2{
+    font-size:26px;
+    line-height:1.4;
+}
+
+.hero p{
+    font-size:18px;
+    line-height:1.6;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:20px;
+}
+}
