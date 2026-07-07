@@ -244,3 +244,24 @@ transition:.3s;
 background:#ff9800;
 transform:scale(1.05);
 }
+#rating{
+text-align:center;
+padding:50px 20px;
+background:#111;
+color:white;
+}
+
+#rating h2{
+color:#FFD700;
+font-size:32px;
+}
+
+#rating p{
+font-size:18px;
+margin:15px 0;
+}
+
+#rating h1{
+font-size:45px;
+letter-spacing:5px;
+}
